@@ -1,6 +1,9 @@
 :root {
+  /* text */
   --accent-color: #a68f65;
   --text-on-black-color: #faebd7;
+  --ff-accent: "Rubik", sans-serif;
+  --text-general: #757575;
 }
 
 * {
@@ -8,15 +11,11 @@
 }
 
 body {
-  /* color: var(--primary-text-color);
+  color: var(--primary-text-color);
   background-color: var(--bgc-color);
-  font-family: roboto, sans-serif;
-  letter-spacing: 0.03em;
-  font-size: 14px; */
-}
-
-.section {
-  /* padding: 94px 0 94px 0; */
+  font-family: "Montserrat Alternates", sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 14px;
 }
 
 .list {
@@ -56,9 +55,16 @@ ul {
   clip: rect(0 0 0 0);
 }
 
-/* -------------------------------- HEADER MENU ------------------------- */
+p {
+  font-size: 15px;
+  color: #;
+}
+
+/* -------------------------------- HEADER ADRESS --------------------------------------- */
 .contact-header {
   background-color: #222;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .contact-header-tel {
@@ -79,16 +85,21 @@ ul {
 .header-text {
   display: flex;
   align-items: center;
+  height: 38px;
 
   color: var(--text-on-black-color);
   text-decoration: none;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--accent-color);
 }
 
 .icon-library {
-  width: 17px;
-  height: 16px;
+  display: flex;
+  width: 20px;
+  height: 24px;
   margin-right: 7px;
-  fill: var(--accent-color);
+  /* padding-top: 3px; */
 }
 
 .icon-sm {
@@ -100,23 +111,268 @@ ul {
   background-color: var(--accent-color);
   fill: var(--text-on-black-color);
 
-  transition: fill 2500ms ubic-bezier(0.4, 0, 0.2, 1);
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-header-tel li:not(:first-child) {
-  margin-right: 14px;
+  margin-right: 20px;
 }
 
 .contact-header-tel li:last-child {
   margin-right: 0;
 }
 
-.icon-sm:hover,
-.icon-sm:focus,
 .header-text:hover,
 .header-text:focus {
-  fill: var(--accent-color);
+  fill: var(--text-on-black-color);
   color: var(--accent-color);
-  background-color: var(--text-on-black-color);
+}
+
+.icon-sm.icon-fb:hover,
+.icon-sm.icon-fb:focus {
+  fill: white;
+  background-color: blue;
+}
+
+.icon-sm.icon-lid:hover,
+.icon-sm.icon-lid:focus {
+  fill: white;
+  background-color: #0e76a8;
+}
+
+.icon-sm.icon-youtube:hover,
+.icon-sm.icon-youtube:focus {
+  fill: white;
+  background-color: #c4302b;
+}
+
+/* -------------------------------- NAV MENU --------------------------------------- */
+
+.nav-section {
+  position: sticky;
+  top: 0;
+  height: 77px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: rgba(25, 25, 25, 1);
+  border-top: 1px rgba(123, 123, 138, 0.27) solid;
+  border-bottom: 1px rgba(170, 170, 187, 0.27) solid;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu > a {
+  margin-right: auto;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items li {
+  display: flex;
+  position: relative;
+}
+
+.nav-items li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.nav-items a {
+  display: flex;
+  text-decoration: none;
+  color: var(--text-on-black-color);
+  font-family: var(--ff-accent);
+  font-size: 18px;
+  font-weight: 400;
+  align-items: center;
+}
+
+.nav-items a:hover::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+
+/* ------------------------- MAIN CONTENT ------------------ */
+
+.area-content {
+  padding-top: 72px;
+}
+
+.hero {
+  background-color: white;
+  height: calc(100vh / 2);
+  border-bottom: 1px rgba(170, 170, 187, 0.27) solid;
+}
+
+.hero > .container {
+  display: flex;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+h2 {
+  font-size: 40px;
+  color: var(--text-general);
+  margin-bottom: 24px;
+}
+
+.hero-consunlt-block p {
+  margin-bottom: 24px;
+}
+
+.cons-button {
+  font-family: var(--ff-accent);
+  display: inline-block;
+  padding: 10px 32px 10px 32px;
+  background-color: #dc143c;
+  border-radius: 6px;
+  padding: 10px 32px 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.8;
+  cursor: pointer;
+}
+
+.hero-photo {
+  height: calc(100vh / 2);
+  margin-top: -70px;
+}
+
+/* ---------------------------- FOOTER ----------------------- */
+.footer {
+  background-color: #222222;
+  color: var(--text-on-black-color);
+}
+
+.footer-top {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.footer-top li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer-top > li {
+  width: calc((100% - 90px) / 4);
+}
+
+.footer-top h3 {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 21px;
+}
+
+.footer-top p,
+.footer-top a {
+  color: var(--text-general);
+  text-decoration: none;
+  font-family: var(--ff-accent);
+  line-height: 1.58;
+}
+
+.footer-tel li {
+  width: 100%;
+}
+
+.footer-tel a {
+  display: flex;
+}
+
+.footer-tel a > p:last-child {
+  margin-right: 30%;
+  margin-left: auto;
+}
+
+/* -------------------FOOTER 2--------------------------- */
+.footer2 {
+  background-color: #000;
+  width: 100%;
+  height: 94px;
+  color: var(--text-general);
+}
+
+.footer2 > .container {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+
+.rights p {
+  margin-bottom: 15px;
+}
+
+.rights a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-sm {
+  display: flex;
+}
+
+.footer-sm li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.footer-text {
+  display: flex;
+  align-items: center;
+  height: 23px;
+
+  color: var(--text-on-black-color);
+  text-decoration: none;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--accent-color);
+}
+
+.icon-footer {
+  width: 30px;
+  height: 32px;
+}
+
+.icon-footer.icon-tel:hover,
+.icon-footer.icon-tel:focus {
+  fill: lawngreen;
+}
+
+.icon-footer.icon-mail:hover,
+.icon-footer.icon-mail:focus {
+  fill: yellow;
+}
+
+.icon-sm.icon-wa:hover,
+.icon-sm.icon-wa:focus {
+  fill: white;
+  background-color: #25d366;
+}
+
+.icon-sm.icon-tg:hover,
+.icon-sm.icon-tg:focus {
+  fill: #0088cc;
+  background-color: #ffffff;
+}
+
+.icon-footer.icon-mail {
+  height: 30px;
+}
+
+.icon-footer.icon-tel {
+  padding-top: 4px;
 }

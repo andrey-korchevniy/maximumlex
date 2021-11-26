@@ -5,87 +5,104 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maximum Lex, Адвокатське об'єднання</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;600;900&family=Rubik:wght@400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <header>
-
 <!-- Верхняя полоса Хедера -->
-  <section class="contact-header">
-    <div class="container">
-      <ul class="list contact-header-tel">
-        <li class="logo-right">
-          <a class="header-text list" href="https://goo.gl/maps/BHDJSyfBUV4NVkq18">
-            <svg class="icon-library">
-              <use href="./images/icons.svg#icon-library" width="17"></use>
-            </svg>
-            проспект Перемоги, 26, офіс 2, Київ, 04116
-          </a>
-        </li>
-        <li>
-          <a class="list header-text" href="tel:+380505946780" class="list">
-            <svg class="icon-library">
-              <use href="./images/icons.svg#icon-phone" width="17"></use>
-            </svg>
-            +380505946780
-          </a>
-        </li>
-        <li>
-          <a class="list header-text" href="mailto:ao.maximumlex@gmail.com">
-            <svg class="icon-library">
-              <use href="./images/icons.svg#icon-envelop" width="17"></use>
-            </svg>
-            ao.maximumlex@gmail.com
-          </a>
-        </li>
-        <li>
-          <a class="icon-sm" href="facebook" aria-label="Facebook link">
-            <svg width="8">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a class="icon-sm" href="LinkedIn" aria-label="LinkedIn link">
-            <svg width="14">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a class="icon-sm" href="YouTube" aria-label="Youtube link">
-            <svg width="14">
-              <use href="./images/icons.svg#icon-youtube"></use>
-            </svg>
-          </a>
-        </li>
+    <section class="contact-header">
+      <div class="container">
+        <ul class="list contact-header-tel">
+          <li class="logo-right">
+            <a class="header-text" href="https://goo.gl/maps/BHDJSyfBUV4NVkq18">
+              <svg class="icon-library">
+                <use href="./images/icons.svg#icon-library" ></use>
+              </svg>
+              проспект Перемоги, 26, офіс 2, Київ, 04116
+            </a>
+          </li>
+          <li>
+            <a class="header-text" href="tel:+380505946780">
+              <svg class="icon-library">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 050 594 6780
+            </a>
+          </li>
+          <li>
+            <a class="list header-text" href="mailto:ao.maximumlex@gmail.com">
+              <svg class="icon-library">
+                <use href="./images/icons.svg#icon-envelop"></use>
+              </svg>
+              ao.maximumlex@gmail.com
+            </a>
+          </li>
+          <li>
+            <a class="icon-sm icon-fb" href="facebook" aria-label="Facebook link">
+              <svg width="8">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="icon-sm icon-lid" href="LinkedIn" aria-label="LinkedIn link">
+              <svg width="14">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="icon-sm icon-youtube" href="YouTube" aria-label="Youtube link">
+              <svg width="14">
+                <use href="./images/icons.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </header>
+
+  <!-- Полоса Хедера с меню и навигацией -->
+  <nav class="nav-section">
+    <div class="container nav-menu">
+      <a href="./">
+        <img src="./images/logo-gold.svg" alt="логотип адвокатського об'єдання Максимум Лекс" width="258" height="65">
+      </a>
+      <ul class="nav-items list">
+        <li><a href="./index.html">Практика</a></li>
+        <li><a href="./index.html">Консультація</a></li>
+        <li><a href="./index.html">Бібліотека</a></li>
+        <li><a href="./index.html">Подкасти</a></li>
+        <li><a href="./index.html">Контакти</a></li>
       </ul>
     </div>
-  </section>
-<!-- Полоса Хедера с меню и навигацией -->
-      <nav>
-        <img src="./images/logo-gold.svg" alt="логотип адвокатського об'єдання Максимум Лекс" height="65">
-        <ul class="list">
-          <li><a href="./index.html">Консультація</a></li>
-          <li><a href="./index.html">Практика</a></li>
-          <li><a href="./index.html">Бібліотека</a></li>
-          <li><a href="./index.html">Подкасти</a></li>
-          <li><a href="./index.html">Контакти</a></li>
-        </ul>
-      </nav>
-    </div>
+  </nav>
 
-</header>
 
-<main>
+<main class="area-content">
 <!-- Сектор Герой с предложением записаться на консультацию -->
-<section>
-  <h1>Записатися на консультацію</h1>
-  <p>Ми проводимо консультації за попереднім записом. Можливі консультації в офісі або онлайн через Skype.</p>
-  <a href="/">Записатися на консультацію</a>
-  <img src="./images/korchevny-hero.jpg" alt="фотография Андрея Корчевного за письменным столом" width="507">
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-consunlt-block">
+      <h1 class="visually-hidden">Найкращі адвокати України</h1>
+      <h2 class="call-consult">Записатися на консультацію</h2>
+      <p>Ми проводимо консультації за попереднім записом. Можливі консультації в офісі або онлайн через Skype.</p>
+      <a class="cons-button" href="/">Записатися на консультацію</a>
+    </div>
+    <a href="./">
+      <img class="hero-photo" src="./images/korchevny-hero.jpg" alt="фотография Андрея Корчевного за письменным столом">
+    </a>
+  </div>
 </section>
+
+
 
 <!-- Секция статей из блога -->
 <section>
@@ -126,40 +143,100 @@
 
 <footer>
 <!-- Секция со ссылками -->
-  <section>
-    <h2>Швидкий доступ до сторінок сайту</h2>
-    <ul>
-      <li>
-        <h3>Консультація</h3>
-        <ul>
-          <li>Записатися по телефону</li>
-          <li>Записатися онлайн</li>
-          <li>Важлива інформація</li>
-          <li>Вартість послуг</li>
-        </ul>
-      </li>
-      <li>
-        <h3>Способи оплати</h3>
-        <ul>
-          <li>спосіб 1</li>
-          <li>спосіб 2</li>
-          <li>спосіб 3</li>
-        </ul>
-      </li>
-      <li>
-        <h3>Номери телефонів</h3>
-        <ul>
-          <li><a href="tel:+380505946780">MTC: +380505946780</a></li>
-          <li><a href="tel:+380735946780">Life: +380735946780</a></li>
-        </ul>
-      </li>
-      <li>
-        <h3>Адреса офісу</h3>
-        <p><a href="https://goo.gl/maps/BHDJSyfBUV4NVkq18">Україна, 04116, місто Київ, проспект Перемоги, 26, офіс 2</a></p>
-      </li>
+  <section class="footer">
+    <div class="container">
+      <h2 class="visually-hidden">Швидкий доступ до сторінок сайту</h2>
+      <ul class="footer-top list">
+        <li>
+          <h3>Консультація</h3>
+          <ul class="list">
+            <li><p>Записатися по телефону</p></li>
+            <li><p>Записатися онлайн</p></li>
+            <li><p>Важлива інформація</p></li>
+            <li><p>Вартість послуг</p></li>
+          </ul>
+        </li>
+        <li>
+          <h3>Способи оплати</h3>
+          <ul class="list">
+            <li><p>спосіб 1</p></li>
+            <li><p>спосіб 2</p></li>
+            <li><p>спосіб 3</p></li>
+          </ul>
+        </li>
+        <li>
+          <h3>Номери телефонів</h3>
+          <ul class="footer-tel list">
+            <li><a href="tel:+380505946780"><p>MTC:</p> <p>+38 050 594 6780</p></a></li>
+            <li><a href="tel:+380735946780"><p>Life:</p> <p>+38 073 594 6780</p></a></li>
+          </ul>
+        </li>
+        <li>
+          <h3>Адреса офісу</h3>
+          <p><a href="https://goo.gl/maps/BHDJSyfBUV4NVkq18">Україна, 04116, місто Київ, проспект Перемоги, 26, офіс 2</a></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="footer2">
+    <div class="container">
+      <div class="rights">
+        <p>© 2021 Адвокатське об'єднання "Максимум Лекс" – Всі права захищені</p>
+        <a href="mailto:andrey.kor4evny@gmail.com">Зв'язатися з розробником сайту</a>
+      </div>
+      <ul class="footer-sm list">
+        <li>
+          <a class="footer-text" href="tel:+380505946780">
+            <svg class="icon-footer icon-tel">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="footer-text" href="mailto:ao.maximumlex@gmail.com">
+            <svg class="icon-footer icon-mail">
+              <use href="./images/icons.svg#icon-envelop"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="icon-sm icon-wa" href="whatsapp" aria-label="Whatsapp link">
+            <svg>
+              <use href="./images/icons.svg#icon-whatsapp"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="icon-sm icon-tg" href="telegram" aria-label="Telegram link">
+            <svg>
+              <use href="./images/icons.svg#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="icon-sm icon-fb" href="facebook" aria-label="Facebook link">
+            <svg width="8">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="icon-sm icon-lid" href="LinkedIn" aria-label="LinkedIn link">
+            <svg width="14">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="icon-sm icon-youtube" href="YouTube" aria-label="Youtube link">
+            <svg width="14">
+              <use href="./images/icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-
-    </ul>
   </section>
 </footer>
 
